@@ -5,6 +5,26 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 ---
 
+## Brief Description of the App
+
+An internal system application for managing posts. The application allows users to view, create, edit, and delete items. It is built using React and classic CSS.
+The style follows the visual identity of the Pixacom website, from colors to animations and details such as border radius.
+Possible further improvements are described in the "Possible Improvements" section.
+
+---
+
+## Complete Stack
+
+- React
+- React Hook Form
+- Axios
+- React Quill
+- React Router DOM
+- CSS (Vanilla)
+- Netlify
+
+---
+
 ## Application Features
 
 ### Application usability 
@@ -109,6 +129,26 @@ src/
 [Netlify Deploy](https://chipper-tanuki-5b397c.netlify.app/)
 
 Tento projekt byl vytvořen pomocí [Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+## Stručný popis aplikace
+
+Interní systémová aplikace sloužící ke správě příspěvků. Aplikace umožňuje prohlížet, vytvářet, editovat a mazat položky. Je tvořena v Reactu a klasickém CSS. 
+Stylem drží vizuální identitu Pixacom webu od barev až po animace i detaily jako radius hran.
+Další možná vylepšení aplikace v odstavci "Možná vylepšení".
+
+---
+
+## Kompletní Stack
+
+- React
+- React Hook Form
+- Axios
+- React Quill
+- React Router DOM
+- CSS (Vanilla)
+- Netlify
 
 ---
 
