@@ -68,11 +68,13 @@ npm start
 ```
 src/
 ├── components/           # Reusable UI components
-│   ├── fragments/        # Small UI fragments (e.g. CommentsTable, QuillEditor)
+│   ├── ui/        # Small UI fragments (e.g. CommentsTable, QuillEditor)
 │   ├── layouts/          # Layout wrappers (e.g. Modal, Header)
 │   └── *.jsx             # Main functional components (e.g. NewPost, PostList)
 ├── hooks/
-    └── usePostsPerPage.js # Custom hook for pagination
+│   ├──validation.js # Form validation
+│   ├──usePostFormLogic.js # Form logic for creating a new post
+│   └── usePostsPerPage.js # Custom hook for pagination
 ├── api/                  
 │   └── axios.js          # Axios API configuration
 ├── App.css               # Global styles
@@ -96,13 +98,15 @@ src/
   - Uses react-quill for text editing.
   - Uses react-hook-form for form management.
     
-## Fragment Components
+## UI Components
 - CommentsTable.jsx
   - Displays a table of comments for a post.
-- PostFormButtons.jsx
-  - Buttons for post actions (e.g. Save, Cancel).
 - Loader.jsx
   - Loader component for loading states.
+- NewPostForm.jsx
+  - Form for creating a new post.
+- PostFormButtons.jsx
+  - Buttons for post actions (e.g. Save, Cancel).
 - PostTable.jsx
   - Table for displaying a list of posts.
 - QuillEditor.jsx
@@ -119,8 +123,12 @@ src/
   - Pagination component for lists.
 
 ## Hooks
+- usePostFormLogic.js
+  - Logic for creating a new post form.
 - usePostsPerPage.js
   - Custom hook for pagination for different screen resolutions.
+- validation.js
+  - Form validation logic.
 
 ---
 
@@ -198,11 +206,13 @@ npm start
 ```
 src/
 ├── components/           # Znovupoužitelné UI komponenty
-│   ├── fragments/        # Malé UI fragmenty (např. CommentsTable, QuillEditor)
+│   ├── ui/        # Malé UI fragmenty (např. CommentsTable, QuillEditor)
 │   ├── layouts/          # Layout wrappery (např. Modal, Header)
 │   └── *.jsx
 ├── hooks/
-    └── usePostsPerPage.js # Vlastní hook pro stránkování
+│   ├──validation.js # Validace formulářů
+│   ├──usePostFormLogic.js # Logika formuláře pro vytvoření nového příspěvku
+│   └── usePostsPerPage.js # Vlastní hook pro stránkování
 ├── api/
 │   └── axios.js          # Konfigurace Axios API
 ├── App.css               # Globální styly
@@ -226,11 +236,13 @@ src/
   - Používá react-quill pro editaci textu.
   - Používá react-hook-form pro správu formulářů.
 
-## Fragmentové komponenty
+## UI komponenty
 - CommentsTable.jsx
   - Zobrazuje tabulku komentářů pro příspěvek.
 - Loader.jsx
   - Loader pro načítání obsahu.
+- NewPostForm.jsx
+  - Formulář pro vytvoření nového příspěvku.
 - PostFormButtons.jsx
   - Tlačítka pro akce s příspěvkem (např. Uložit, Zrušit).
 - PostTable.jsx
@@ -249,7 +261,11 @@ src/
   - Komponenta pro stránkování.
 
 ## Hooky
+- usePostFormLogic.js
+  - Logika pro formulář pro vytvoření nového příspěvku.
 - usePostsPerPage.js
   - Vlastní hook pro stránkování pro různé rozlišení obrazovky.
+- validation.js
+  - Logika validace formulářů.
 
 ---

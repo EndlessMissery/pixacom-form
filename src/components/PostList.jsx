@@ -3,7 +3,7 @@ import { fetchPosts, deletePost } from '../api/axios';
 import NewPost from './NewPost';
 import Modal from './layouts/Modal';
 import PageHeader from './layouts/PageHeader';
-import PostTable from './fragments/PostTable';
+import PostTable from './ui/PostTable';
 import Pagination from './layouts/Pagination';
 import usePostsPerPage from '../hooks/usePostsPerPage';
 import './PostList.css';

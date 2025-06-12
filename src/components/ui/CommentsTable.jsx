@@ -1,4 +1,4 @@
-import './PostTable.css'
+import './CommentsTable.css';
 
 const CommentsTable = ({ comments, onDelete }) => (
   <div className="comments">
@@ -19,7 +19,13 @@ const CommentsTable = ({ comments, onDelete }) => (
             <td>{comment.email}</td>
             <td>{comment.body}</td>
             <td className="action-cell">
-              <button className="action-table-btn" onClick={() => onDelete(comment.id)}>🗑️</button>
+              <button
+                className="action-table-btn"
+                onClick={() => onDelete(comment.id)}
+                aria-label={`Smazat komentář od ${comment.name}`}
+              >
+                🗑️
+              </button>
             </td>
           </tr>
         ))}

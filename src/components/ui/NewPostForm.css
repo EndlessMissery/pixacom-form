@@ -1,0 +1,50 @@
+    .form h2,
+  .form label {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form label {
+    display: block;
+  }
+  
+  .char-counter {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    opacity: 0.35;
+    text-align: right;
+  }
+  
+  .error {
+    position: fixed;
+    color: red;
+    font-size: 0.85rem;
+    display: block;
+  }
+  
+  .form input[type="text"] {
+    width: 75%;
+    padding: 0.6rem 0.8rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    transition: border-color 0.5s;
+  }
+  
+  .form input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: var(--primary-color);
+  }
+  
+  ::placeholder {
+    color: var(--secondary-color);
+    opacity: 0.3;
+  }
+  
+  .error {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    display: block;
+  }
+  
+  
