@@ -1,4 +1,5 @@
 # Pixacom Technology - Post App
+[Netlify Deploy](https://chipper-tanuki-5b397c.netlify.app/)
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -85,6 +86,7 @@ src/
 
 
 # Pixacom Technology - Post App
+[Netlify Deploy](https://chipper-tanuki-5b397c.netlify.app/)
 
 Tento projekt byl vytvořen pomocí [Create React App](https://github.com/facebook/create-react-app).
 
