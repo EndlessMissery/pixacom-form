@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# Pixacom technology - Post App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Installation
+```bash
+npm install
+npm install react-router-dom axios react-hook-form react-quill
+npm start
+```
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Dependencies
+- axios - API communication
+- react-router-dom - Routing
+- react-hook-form - Form management
+- react-quill - Text editor
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
+src/
+├── components/           # Reusable UI components
+│   ├── fragments/        # Small UI fragments (e.g. CommentsTable, QuillEditor)
+│   ├── layouts/          # Layout wrappers (e.g. Modal, Header)
+│   └── *.jsx             # Main functional components (e.g. NewPost, PostList)
+├── hooks/
+    └── usePostsPerPage.js # Custom hook for pagination
+├── api/                  
+│   └── axios.js          # Axios API configuration
+├── App.css               # Global styles
+├── App.jsx               # Main app component
+└── index.js              # App entry point
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key Components
+- PostList.jsx
+  - Displays a list of posts with pagination.
+  - CRUD operations for posts.
+  - Key functions
+    - handleCreate() - Creates a new post.
+    - handleUpdate() - Updates an existing post.
+    - handleDelete() - Deletes a post.
+    - stripHTML() - Clear HTML tags from a string.
 
-### `npm run build`
+- NewPost.jsx
+  - Form for creating a new post.
+  - Uses react-quill for text editing.
+  - Uses react-hook-form for form management.
+    
+### Fragment Components
+- CommentsTable.jsx
+  - Displays a table of comments for a post.
+- PostFormButtons.jsx
+  - Buttons for post actions (e.g. Save, Cancel).
+- Loader.jsx
+  - Loader component for loading states.
+- PostTable.jsx
+  - Table for displaying a list of posts.
+- QuillEditor.jsx
+  - Custom Quill editor component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout Components
+- Header.jsx
+  - Component for header section (e.g. logo, navigation).
+- Modal.jsx
+  - Modal component for displaying content in a popup.
+- PageHeader.jsx
+  - Component for page headers (e.g. Buttons).
+- Pagination.jsx
+  - Pagination component for lists.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Hooks
+- usePostsPerPage.js
+  - Custom hook for pagination for different screen resolutions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# Pixacom Technology - Post App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Tento projekt byl vytvořen pomocí [Create React App](https://github.com/facebook/create-react-app).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instalace
+```bash
+npm install
+npm install react-router-dom axios react-hook-form react-quill
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Závislosti
+- axios - Komunikace s API
+- react-router-dom - Navigace
+- react-hook-form - Správa formulářů
+- react-quill - Editor textu
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Struktura projektu
+src/
+├── components/           # Znovupoužitelné UI komponenty
+│   ├── fragments/        # Malé UI fragmenty (např. CommentsTable, QuillEditor)
+│   ├── layouts/          # Layout wrappery (např. Modal, Header)
+│   └── *.jsx
+├── hooks/
+    └── usePostsPerPage.js # Vlastní hook pro stránkování
+├── api/
+│   └── axios.js          # Konfigurace Axios API
+├── App.css               # Globální styly
+├── App.jsx               # Hlavní komponent aplikace
+└── index.js              # Vstupní bod aplikace
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+--- 
 
-### Code Splitting
+## Klíčové komponenty
+- PostList.jsx
+  - Zobrazuje list příspěvků s možností stránkování.
+  - CRUD operace pro příspěvky.
+  - Klíčové funkce
+    - handleCreate() - Vytvoří nový příspěvek.
+    - handleUpdate() - Aktualizuje existující příspěvek.
+    - handleDelete() - Odstraní příspěvek.
+    - stripHTML() - Odstraní HTML tagy ze stringu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- NewPost.jsx
+  - Formulář pro vytvoření nového příspěvku.
+  - Používá react-quill pro editaci textu.
+  - Používá react-hook-form pro správu formulářů.
 
-### Analyzing the Bundle Size
+### Fragmentové komponenty
+- CommentsTable.jsx
+  - Zobrazuje tabulku komentářů pro příspěvek.
+- Loader.jsx
+  - Loader pro načítání obsahu.
+- PostFormButtons.jsx
+  - Tlačítka pro akce s příspěvkem (např. Uložit, Zrušit).
+- PostTable.jsx
+  - Tabulka pro zobrazení listu příspěvků.
+- QuillEditor.jsx
+  - Vlastní komponent Quill editoru.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Layoutové komponenty
+- Header.jsx
+  - Komponenta pro hlavičku (např. logo, navigace).
+- Modal.jsx
+  - Komponenta pro zobrazení obsahu v popup.
+- PageHeader.jsx
+  - Komponenta pro hlavičky stránek (např. Tlačítka).
+- Pagination.jsx
+  - Komponenta pro stránkování.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Hooky
+- usePostsPerPage.js
+  - Vlastní hook pro stránkování pro různé rozlišení obrazovky.

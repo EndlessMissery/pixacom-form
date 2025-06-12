@@ -1,0 +1,60 @@
+  .button {
+    position: relative;
+    overflow: hidden;
+    background-image:                 
+      linear-gradient(var(--secondary-color),
+                      var(--secondary-color) 50%,
+                      var(--primary-color) 50%,
+                      var(--primary-color));
+    background-size: 100% 200%;
+    transition: background-position .5s;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1;
+    font-weight: 600;
+  }
+
+    
+  .button:hover {
+    background-color: var(--primary-color);
+    background-position: 0 -100%;
+  }
+
+  .button-close {
+    position: relative;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cdcdcd;
+    transition: 0.3s
+  }
+  
+  .button-close::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 2px;
+    width: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+    color: var(--primary-color);
+  }
+
+  .button-close:hover {
+    color: var(--primary-color);
+    transition: 0.3s;
+  }
+  
+  .button-close:hover::after {
+    width: 100%;
+  }
+  
