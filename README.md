@@ -1,4 +1,4 @@
-# Pixacom technology - Post App
+# Pixacom Technology - Post App
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -20,6 +20,7 @@ npm start
 ---
 
 ## Project Structure
+```
 src/
 ├── components/           # Reusable UI components
 │   ├── fragments/        # Small UI fragments (e.g. CommentsTable, QuillEditor)
@@ -32,7 +33,7 @@ src/
 ├── App.css               # Global styles
 ├── App.jsx               # Main app component
 └── index.js              # App entry point
-
+```
 ---
 
 ## Key Components
@@ -78,6 +79,11 @@ src/
 
 ---
 
+
+
+
+
+
 # Pixacom Technology - Post App
 
 Tento projekt byl vytvořen pomocí [Create React App](https://github.com/facebook/create-react-app).
@@ -100,6 +106,7 @@ npm start
 ---
 
 ## Struktura projektu
+```
 src/
 ├── components/           # Znovupoužitelné UI komponenty
 │   ├── fragments/        # Malé UI fragmenty (např. CommentsTable, QuillEditor)
@@ -112,7 +119,7 @@ src/
 ├── App.css               # Globální styly
 ├── App.jsx               # Hlavní komponent aplikace
 └── index.js              # Vstupní bod aplikace
-
+```
 --- 
 
 ## Klíčové komponenty
