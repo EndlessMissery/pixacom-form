@@ -3,6 +3,26 @@
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
+---
+
+## Application Features
+
+### Application usability 
+- Create – Add a post to the list with required fields (Post title and text content), using a text editor implemented with Quill
+- Read – View the list of all posts (Mock API via Axios)
+- Update – Edit posts in the list (both title and text content)
+- Delete – Delete items (both entire posts in the list and comments in the detail view)
+
+---
+
+## Future improvements
+- Adding language modules (e.g., i18next) to support international users
+- Adding categories for specific items and enabling filtering based on these categories (the Header area is reserved for this stylistically)
+- Making category selection mandatory when creating a post
+- Adding comment rating functionality
+
+---
+
 ## Installation
 ```bash
 npm install
@@ -52,7 +72,7 @@ src/
   - Uses react-quill for text editing.
   - Uses react-hook-form for form management.
     
-### Fragment Components
+## Fragment Components
 - CommentsTable.jsx
   - Displays a table of comments for a post.
 - PostFormButtons.jsx
@@ -89,6 +109,26 @@ src/
 [Netlify Deploy](https://chipper-tanuki-5b397c.netlify.app/)
 
 Tento projekt byl vytvořen pomocí [Create React App](https://github.com/facebook/create-react-app).
+
+---
+
+## Funkčnost aplikace
+
+### Aplikace umožňuje
+- Create – Vytvořit položku do seznamu příspěvků s povinnými atributy (Název příspěvku a textový obsah), s textovým editorem implementovaným přes Quill
+- Read – Prohlížet si seznam všech položek v seznamu (Mock API přes Axios)
+- Update – Editovat příspěvky v seznamu (jak název, tak i textový obsah)
+- Delete – Mazat položky (jak celé příspěvky v seznamu, tak i komentáře v detailu) 
+
+---
+
+## Možná vylepšení
+- Přidání jazykových modulů, (např. i18next) i pro zahraniční uživatele
+- Přidání kategorií pro určité položky a zároveň přidat filtrování na základě této kategorie (stylově je k tomu vyhrazen prostor v Headeru)
+- Výběr kategorie zavést jako povinnost při tvoření příspěvku
+- Hodnocení komentářů
+
+---
 
 ## Instalace
 ```bash
@@ -139,7 +179,7 @@ src/
   - Používá react-quill pro editaci textu.
   - Používá react-hook-form pro správu formulářů.
 
-### Fragmentové komponenty
+## Fragmentové komponenty
 - CommentsTable.jsx
   - Zobrazuje tabulku komentářů pro příspěvek.
 - Loader.jsx
@@ -164,3 +204,5 @@ src/
 ## Hooky
 - usePostsPerPage.js
   - Vlastní hook pro stránkování pro různé rozlišení obrazovky.
+
+---
