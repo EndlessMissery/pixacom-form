@@ -35,6 +35,8 @@ Possible further improvements are described in the "Possible Improvements" secti
 - Update – Edit posts in the list (both title and text content)
 - Delete – Delete items (both entire posts in the list and comments in the detail view)
 
+![App Screenshot_1](src/assets/New.png)
+![App Screenshot_2](src/assets/Edit.png)
 ---
 
 ## Future improvements
@@ -163,6 +165,8 @@ Další možná vylepšení aplikace v odstavci "Možná vylepšení".
 - Update – Editovat příspěvky v seznamu (jak název, tak i textový obsah)
 - Delete – Mazat položky (jak celé příspěvky v seznamu, tak i komentáře v detailu) 
 
+![App Screenshot_1](src/assets/New.png)
+![App Screenshot_2](src/assets/Edit.png)
 ---
 
 ## Možná vylepšení
