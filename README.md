@@ -11,6 +11,8 @@ An internal system application for managing posts. The application allows users 
 The style follows the visual identity of the Pixacom website, from colors to animations and details such as border radius.
 Possible further improvements are described in the "Possible Improvements" section.
 
+![App Screenshot](src/assets/Main.png)
+
 ---
 
 ## Complete Stack
@@ -138,6 +140,7 @@ Interní systémová aplikace sloužící ke správě příspěvků. Aplikace um
 Stylem drží vizuální identitu Pixacom webu od barev až po animace i detaily jako radius hran.
 Další možná vylepšení aplikace v odstavci "Možná vylepšení".
 
+![App Screenshot](src/assets/Main.png)
 ---
 
 ## Kompletní Stack
