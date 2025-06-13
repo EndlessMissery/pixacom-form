@@ -12,9 +12,6 @@ const FormHeader = ({ isEdit }) => (
 
 const NewPost = ({ post, onCreate, onUpdate, closeModal }) => {
   const isEdit = Boolean(post);
-  const maxTitleLength = 80;
-  const maxBodyLength = 1000;
-  const minBodyLength = 50;
 
   const {
     control,
@@ -39,9 +36,6 @@ const NewPost = ({ post, onCreate, onUpdate, closeModal }) => {
           register={register}
           errors={errors}
           isLoading={isLoading}
-          maxTitleLength={maxTitleLength}
-          maxBodyLength={maxBodyLength}
-          minBodyLength={minBodyLength}
           watch={watch}
         />
 
