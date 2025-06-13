@@ -28,7 +28,7 @@ const NewPost = ({ post, onCreate, onUpdate, closeModal }) => {
   return (
     <div>
       {isLoading && <Loader />}
-      <form onSubmit={handleSubmit(onSubmit)} className="form" data-color-mode="light">
+      <form onSubmit={handleSubmit(onSubmit)} className="form">
         <FormHeader isEdit={isEdit} />
 
         <PostForm

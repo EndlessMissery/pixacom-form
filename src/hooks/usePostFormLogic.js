@@ -13,7 +13,10 @@ export const usePostFormLogic = (post, isEdit, onCreate, onUpdate, closeModal) =
     setValue,
     watch,
     formState: { errors },
+    trigger,
   } = useForm({
+    mode: 'onChange',
+    reValidateMode: 'onChange',
     defaultValues: {
       title: post?.title || '',
       body: post?.body || '',
@@ -26,8 +29,10 @@ export const usePostFormLogic = (post, isEdit, onCreate, onUpdate, closeModal) =
       setValue('id', post.id);
       setValue('title', post.title);
       setValue('body', post.body);
+      
+      trigger();
     }
-  }, [isEdit, post, setValue]);
+  }, [isEdit, post, setValue, trigger]);
 
   const onSubmit = async (data) => {
     setIsLoading(true);
@@ -47,8 +52,12 @@ export const usePostFormLogic = (post, isEdit, onCreate, onUpdate, closeModal) =
         await createPost(newPost);
         onCreate(newPost);
       }
+      setTimeout(() => {
+        setIsLoading(false);
+        closeModal();
+      }, 1500);
     } catch (error) {
-      console.error('Chyba při ukládání příspěvku:', error);
+      setIsLoading(false);
     } finally {
       setTimeout(() => {
         setIsLoading(false);

@@ -8,17 +8,13 @@ const NewPostForm = ({
   register,
   errors,
   isLoading,
-  maxTitleLength,
-  maxBodyLength,
-  minBodyLength,
+  maxTitleLength = 80,
+  maxBodyLength = 1000,
+  minBodyLength = 50,
   watch,
 }) => {
   const titleValue = watch('title');
   const bodyValue = watch('body') || '';
-
-  const titleErrorMessage = validateTitle(titleValue, maxTitleLength) !== true ? validateTitle(titleValue, maxTitleLength) : null;
-  const bodyErrorMessage = validateBody(bodyValue, minBodyLength, maxBodyLength) !== true ? validateBody(bodyValue, minBodyLength, maxBodyLength) : null;
-
   const strippedBody = bodyValue.replace(/<(.|\n)*?>/g, '').trim();
 
   return (
@@ -31,7 +27,6 @@ const NewPostForm = ({
           {...register('title', { validate: value => validateTitle(value, maxTitleLength) })}
           disabled={isLoading}
         />
-        {(titleErrorMessage) && <span className="error">{titleErrorMessage}</span>}
         {errors.title && <span className="error">{errors.title.message}</span>}
         <div className="char-counter">
           {titleValue?.length || 0}/{maxTitleLength} znaků
@@ -50,14 +45,13 @@ const NewPostForm = ({
                 onChange={field.onChange}
                 readOnly={isLoading}
               />
-              {bodyErrorMessage && <span className="error">{bodyErrorMessage}</span>}
+              {errors.body && <span className="error">{errors.body.message}</span>}
               <div className="char-counter">
                 {strippedBody.length}/{maxBodyLength} znaků
               </div>
             </>
           )}
         />
-        {errors.body && <span className="error">{errors.body.message}</span>}
       </label>
     </>
   );
